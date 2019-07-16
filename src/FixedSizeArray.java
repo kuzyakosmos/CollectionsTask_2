@@ -11,18 +11,18 @@ import java.util.ArrayList;
  * 1-й элемент удаляется, а каждый следующий смещается на один элемент влево.
  */
 
-public class MyArray<E> {
+public class FixedSizeArray<E> {
 
     ArrayList<E> array;
 
     private int size;
 
-    public MyArray() {
+    public FixedSizeArray() {
         this.array = new ArrayList(16);
         this.size = 16;
     }
 
-    public MyArray(int size) {
+    public FixedSizeArray(int size) {
         this.array = new ArrayList(size);
         this.size = size;
     }
